@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage[letterpaper,top=1.5in, bottom=1.5in, left=1in, right=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%\renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
+\newcommand{\contact}[4]{
+\vspace*{-8pt}
+\begin{center}
+{\large {#1}}\\
+#2 \\
+#3 \underline{#4}
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[8]{
+ \textbf{#1} $\bullet$ #2\\ 
+#3 #4 \textbf{#5}\\
+#6 #7 \textbf{#8}\\
+\vspace*{5pt}
+}
+\newcommand{\school}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 \\
+
+}
+\newcommand{\object}[1]{#1}
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{Qin (Kevin) Guan}
+{4720 Centre Ave, Apt 6A, Pittsburgh PA. 15213}{(412) 225-1963,}{qindotguan@gmail.com}
+
+\header{Objective}
+\object{Software Quality Engineer or System Engineer position where I can effectively utilize my expertise in development, quality assurance and system administrator.}
+
+\header{Summary}
+\begin{achievements}
+\item Led projects in virtualization quality team, managed three projects simultaneously.
+\item Experienced in both development and quality assurance positions.
+\item Gained customer communication skills as third line support engineer.
+\end{achievements}
+
+\header{Work History}
+\employer{Red Hat - Research and Development}{Mar. 2011 - July 2013}{Quality Engineer}
+	\begin{achievements}
+	\item Led the Xen project quality assurance in test strategy and execution, finished four rounds of releases with positive feedback from customers.
+	\item Led the driver certification by using Windows Hardware Quality Labs (WHQL) testing.
+	\item Initiated a new project of Red Hat para-virtual driver testing on third partner Windows Hyper-V and VMWare ESXi hypervisors.
+	\item Designed a test automation system with autotest framework in Python and Shell, saving about 50\% of the testing time.
+	\end{achievements}
+
+\employer{Platform Computing (acquired by IBM)}{Jan. 2008 - Mar. 2011}{Software Developer}
+	\begin{achievements}
+	\item Designed and implemented a certification tool for the supporting of new servers on Platform Cluster Manager (PCM).
+	\item Integrated a job scheduler on PCM to fulfill automatic installation and configuration by using test-driven development processes.
+	\item Customized a minimum virtual machine on Xen to support GPU virtualization, and tested the function with the IaaS product CloudDesktop.
+	\item Directed PCM maintenance and third line support, providing solutions which fully satisfied the customer requirements.
+	\end{achievements}
+
+\header{Projects}
+\employer{Fund evaluation system for the National Ministry of Education}{Sep. 2006 - Jan. 2007}{Software Developer}
+	\begin{achievements}
+	\item Implemented evaluation experts selection system and automatic notification of a funding review panel by Java and SQLServer.
+	\end{achievements}
+\employer{Personnel Management System for Computer Science Department}{Mar. 2005 - June 2006}{Designer, Software Developer}
+	\begin{achievements}
+	\item Designed and implemented a system with the open source software bundle LAMP, which significantly reduced the administrator’s workload and is still in use.
+	\end{achievements}
+
+\header{Honors and Awards}
+\begin{achievements}
+\item Five star (highest) Red Hat award for professional and team spirit (2013).
+\item Three star Red Hat award achieved twice for reliability (2011, 2012).
+\item Annual most valuable employee award at Platform Computing (2009).
+\item Outstanding graduate student award (2006).
+\end{achievements}
+	
+	
+\header{Skills and Certification}
+\begin{achievements}
+\item Python, C, Shell and PHP.
+\item Red Hat Enterprise Linux (RHEL), Xen, VMWare ESXi, Windows Hyper-V.
+\item Scrum, Test Driven Development (TDD)
+\end{achievements}
+
+\header{Education}
+\schoolwithcourses{University of Science and Technology Beijing}{China}
+{Jan. 2008,}{Master of Engineering in}{Computer Software and Theory}
+{July 2005,}{Bachelor of Engineering in}{Computer Science and Technology}
+
+\end{document}
